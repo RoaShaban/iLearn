@@ -1,0 +1,78 @@
+:root{
+    --mainFont: "Outfit", sans-serif;
+    --mainColor: #007ECA;
+}
+
+/* navbar starts */
+
+.navbar .container{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--mainColor);
+}
+
+.nav-link{
+    color: #000;
+    font-family: var(--mainFont);
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.25px;
+    transition: 0.5s;
+}
+
+.nav-link:hover{
+    color: var(--mainColor);
+}
+
+.navbar .navbar-collapse .dropdown-item{
+    text-transform: uppercase;
+    font-family: var(--mainFont);
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.25px;
+    transition: 0.5s;
+}
+
+.navbar .navbar-collapse .dropdown-item:hover{
+    color: var(--mainColor);
+    background-color: #fff;
+}
+
+.navbar .contact i{
+    color: #000;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.navbar .contact span{
+    color: #000;
+    font-family: var(--mainFont);
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.25px;
+    transition: 0.5s;
+}
+
+.navbar .contact i{
+    transition: 0.5s;
+}
+
+.navbar .btn:hover i{
+    color: var(--mainColor);
+}
+
+.navbar .btn:hover span{
+    color: var(--mainColor);
+}
+
+.navbar .btn:hover{
+    color: transparent;
+}
+
+/* navbar ends */
