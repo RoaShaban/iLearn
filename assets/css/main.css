@@ -182,6 +182,18 @@ body ul{
     }
 }
 
+@media screen and (max-width: 551px){
+
+    .browse .browse-title h2{
+        font-size: 30px;
+    }
+
+    .browse .browse-title p{
+        font-size: 18px;
+    }
+
+}
+
 @media screen and (max-width: 520px) {
 
     .browse-more{
@@ -306,6 +318,26 @@ body ul{
         height: 270px;
     }
 
+    .learn-content h2{
+        font-size: 35px;
+    }
+
+}
+
+@media screen and (max-width: 551px){
+
+    .learn-content h2{
+        font-size: 30px;
+    }
+
+    .learn-content p{
+        font-size: 15px;
+    }
+
+    .learn-content h3{
+        font-size: 18px;
+    }
+
 }
 
 @media screen and (max-width: 475px) {
@@ -321,6 +353,18 @@ body ul{
 
     .learn-benifits ul li{
         text-align: left;
+    }
+
+}
+
+@media screen and (max-width: 443px){
+
+    .learn-content h2{
+        font-size: 25px;
+    }
+
+    .learn-content p{
+        font-size: 14px;
     }
 
 }
