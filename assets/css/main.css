@@ -2,6 +2,7 @@
     --mainFont: "Outfit", sans-serif;
     --contentFont: "Heebo", sans-serif;
     --mainColor: #007ECA;
+    --imgBg: #f7f9fc;
 }
 
 body h1, h2,  h3, h4, h5, h6 {
@@ -14,6 +15,10 @@ body p {
 
 body i{
     color: var(--mainColor);
+}
+
+body ul{
+    list-style-type: none;
 }
 
 /* navbar starts */
@@ -199,3 +204,126 @@ body i{
 }
 
 /* browse responsive ends */
+
+/* learn-something starts */
+
+.learn-something .container {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.learn-img{
+    position: relative;
+    background-color: var(--imgBg);
+    height: 499px;
+}
+
+.learn-img img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.learn-content{
+    margin-left: 65px;
+}
+
+.learn-content h2{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.learn-content p{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.learn-content li{
+    margin-bottom: 10px;
+}
+
+.learn-content h3{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* learn-something ends */
+
+/* learn-something responsive starts */
+
+@media screen and (max-width: 1201px){
+
+    .learn-img img{
+        width:400px;
+        height: 270px;
+    }
+
+    .learn-content{
+        margin-left: 50px;
+    }
+
+}
+
+@media screen and (max-width: 993px){
+
+    .learn-something .row{
+        flex-direction: column;
+    }
+
+    .learn-img img{
+        width: 600px;
+        height: 400px;
+    }
+
+    .learn-content{
+        margin-left: 0;
+        margin-top: 45px;
+        text-align: center;
+        align-items: center !important;
+    }
+
+    .learn-content p{
+        margin-bottom: 35px;
+    }
+
+    .learn-content .learn-benifits{
+        background-color: var(--imgBg);
+        padding: 45px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .learn-img{
+        height: 400px;
+    }
+    
+    .learn-img img{
+        width: 400px;
+        height: 270px;
+    }
+
+}
+
+@media screen and (max-width: 475px) {
+
+    .learn-img{
+        height: 300px;
+    }
+    
+    .learn-img img{
+        width: 330px;
+        height: 200px;
+    }
+
+    .learn-benifits ul li{
+        text-align: left;
+    }
+
+}
+
+/* learn-something responsive ends */
+
