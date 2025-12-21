@@ -373,9 +373,6 @@ body ul{
 
 /* learn-then-earn starts */
 
-.learn-then-earn{
-    height: 100vh;
-}
 .learn-then-earn .container{
     padding-left: 60px;
     padding-right: 60px;
@@ -488,3 +485,106 @@ body ul{
 }
 
 /* learn-then-earn responsive ends */
+
+/* footer starts */
+
+footer .container{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+footer h2{
+    color: var(--mainColor);
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+footer .text{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--contentFont);
+}
+
+footer .text a{
+    margin-bottom: 5px;
+}
+
+footer ul, footer .btn{
+    margin: 0;
+    padding: 0;
+}
+
+footer .btn:hover{
+    border: transparent;
+    box-shadow: none;
+}
+
+footer i{
+    font-size: 18px;
+}
+
+footer .contact i{
+    font-size: 16px;
+}
+
+/* footer ends */
+
+/* footer responsive starts */
+
+@media screen and (max-width: 992px){
+
+    footer .footer-content{
+        text-align: left;
+        flex-direction: column;
+        justify-content: center;
+        gap: 60px;
+    }
+
+    footer .footer-content .logo{
+        flex-direction: row !important;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer h2{
+        margin-bottom: 25px;
+    }
+
+    footer .footer-content address{
+        font-size: 14px;
+    }
+
+    footer .office .btn{
+        text-align: left;
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+
+    footer .row{
+        justify-content: space-between;
+    }
+
+    footer .office .btn{
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 576px){
+
+    footer .row{
+        row-gap: 30px;
+    }
+
+    footer h2{
+        margin-bottom: 20px;
+    }
+
+}
+
+
+/* footer responsive ends */
