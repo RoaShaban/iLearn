@@ -371,3 +371,120 @@ body ul{
 
 /* learn-something responsive ends */
 
+/* learn-then-earn starts */
+
+.learn-then-earn{
+    height: 100vh;
+}
+.learn-then-earn .container{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.learn-then-earn .row{
+    background-color: var(--imgBg);
+    padding: 30px;
+}
+
+.learn-then-earn-title h2{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.learn-then-earn-title p{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.learn-then-earn .join-btn{
+    background-color: var(--mainColor);
+    padding: 20px 40px;
+    transition: 0.5s;
+}
+
+.learn-then-earn .join-btn:hover{
+    background-color: #0E70AC;
+}
+
+
+.learn-then-earn .join-btn{
+    font-family: var(--mainFont);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* learn-then-earn ends */
+
+/* learn-then-earn responsive starts */
+
+@media screen and (max-width: 1200px){
+
+    .learn-then-earn .join-btn{
+        background-color: var(--mainColor);
+        padding: 20px 30px;
+    }
+
+    .learn-then-earn-title h2{
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (max-width: 992px){
+
+    .learn-then-earn .row{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .learn-then-earn .learn-then-earn-title h2{
+        margin-bottom: 14px !important;
+    }
+
+    .learn-then-earn .join-btn{
+        padding: 17px 30px;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+
+    .learn-then-earn .learn-then-earn-title h2{
+        font-size: 25px;
+    }
+
+    .learn-then-earn .learn-then-earn-title p{
+        font-size: 14px;
+    }
+
+    .learn-then-earn .join-btn{
+        padding: 15px 27px;
+        margin-top: 7px;
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 514px){
+
+    .learn-then-earn .learn-then-earn-title h2{
+        font-size: 23px;
+    }
+
+    .learn-then-earn .learn-then-earn-title p{
+        font-size: 13px;
+    }
+
+    .learn-then-earn .join-btn{
+        padding: 12px 20px;
+        margin-top: 7px;
+        font-size: 12px;
+    }
+
+}
+
+/* learn-then-earn responsive ends */
