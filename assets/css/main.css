@@ -80,6 +80,11 @@ body ul{
     color: var(--mainColor);
 }
 
+.navbar .btn:active{
+    border: transparent;
+    box-shadow: none;
+}
+
 .navbar .btn:hover span {
     color: var(--mainColor);
 }
@@ -394,6 +399,16 @@ body ul{
     padding: 0;
 }
 
+.featured-courses .btn:hover{
+    border: transparent;
+    box-shadow: none;
+}
+
+.featured-courses .btn:active{
+    border: transparent;
+    box-shadow: none;
+}
+
 .featured-courses-title .btn{
     margin-bottom: 50px;
 }
@@ -414,11 +429,6 @@ body ul{
 
 .featured-courses-title .btn:hover i{
     color: #000;
-}
-
-.featured-courses .btn:hover{
-    border: transparent;
-    box-shadow: none;
 }
 
 .featured-courses .card{
@@ -612,17 +622,21 @@ body ul{
     background-color: var(--mainColor);
     padding: 20px 40px;
     transition: 0.5s;
+    font-family: var(--mainFont);
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .learn-then-earn .join-btn:hover{
     background-color: #0E70AC;
+    border: transparent;
+    box-shadow: none;
 }
 
-
-.learn-then-earn .join-btn{
-    font-family: var(--mainFont);
-    font-size: 16px;
-    font-weight: 500;
+.learn-then-earn .join-btn:active{
+    border: transparent;
+    box-shadow: none;
+    background-color: #0E70AC;
 }
 
 /* learn-then-earn ends */
@@ -729,7 +743,12 @@ footer ul, footer .btn{
     padding: 0;
 }
 
-footer .btn:hover{
+footer .details .btn:hover{
+    border: transparent;
+    box-shadow: none;
+}
+
+footer .details .btn:active{
     border: transparent;
     box-shadow: none;
 }
