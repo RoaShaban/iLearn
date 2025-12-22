@@ -390,6 +390,10 @@ body ul{
     padding: 0 130px;
 }
 
+.featured-courses .btn{
+    padding: 0;
+}
+
 .featured-courses-title .btn{
     margin-bottom: 50px;
 }
@@ -397,10 +401,24 @@ body ul{
 .featured-courses-title .btn span{
     font-size: 16px;
     font-weight: 500;
+    transition: 0.5s;
 }
 
-.featured-courses .btn{
-    padding: 0;
+.featured-courses-title .btn:hover span{
+    color: #000;
+}
+
+.featured-courses-title .btn i{
+    transition: 0.5s;
+}
+
+.featured-courses-title .btn:hover i{
+    color: #000;
+}
+
+.featured-courses .btn:hover{
+    border: transparent;
+    box-shadow: none;
 }
 
 .featured-courses .card{
