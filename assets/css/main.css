@@ -5,6 +5,16 @@
     --imgBg: #f7f9fc;
 }
 
+*{
+    /*outline: auto;*/
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
 body h1, h2,  h3, h4, h5, h6 {
     font-family: var(--mainFont);
 }
@@ -225,6 +235,8 @@ body ul{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 600px;
+    height: 400px;
 }
 
 .learn-content{
@@ -600,6 +612,131 @@ body ul{
 }
 
 /* featured-courses responsive ends */
+
+/* improve section starts */
+
+.improve h2{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.improve h3 button{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.improve p{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.improve .accordion{
+    --bs-accordion-border-color: #fff;
+}
+
+.improve .accordion-body{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.accordion-body, .accordion-button{
+    padding-left: 0;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #fff;
+    box-shadow: none;
+    color: #000;
+}
+
+.accordion-button:focus{
+    box-shadow: none;
+}
+
+.improve .improve-img{
+    position: relative;
+    background-color: var(--imgBg);
+    height: 450px;
+}
+
+.improve .improve-img img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* improve section ends */
+
+/* improve section reaponsive starts */
+
+@media screen and (max-width: 1200px){
+    .improve h2{
+        font-size: 35px;
+    }
+
+    .improve .improve-img img{
+        width:400px;
+        height: 270px;
+    }
+}
+
+@media screen and (max-width: 993px){
+
+    .improve .improve-img img{
+        width: 600px;
+        height: 400px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .improve .improve-img{
+        height: 400px;
+    }
+    
+    .improve .improve-img img{
+        width: 400px;
+        height: 270px;
+    }
+
+}
+
+@media screen and (max-width: 576px){
+
+    .improve .row{
+        row-gap: 20px;
+    }
+
+    .improve p{
+        font-size: 14px;
+    }
+
+    .improve .accordion-body{
+        font-size: 15px;
+    }
+
+    .improve .improve-img{
+        height: 430px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+
+    .improve .improve-img{
+        height: 300px;
+    }
+    
+    .improve .improve-img img{
+        width: 330px;
+        height: 200px;
+    }
+
+}
+
+/* improve section responsive ends */
 
 /* learn-then-earn starts */
 
