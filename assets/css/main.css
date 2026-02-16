@@ -7,6 +7,8 @@
 
 *{
     /*outline: auto;*/
+    box-sizing: border-box;
+    margin: 0;
 }
 
 body{
@@ -29,6 +31,10 @@ body i{
 
 body ul{
     list-style-type: none;
+}
+
+.row{
+    margin: 0;
 }
 
 /* navbar starts */
@@ -184,6 +190,14 @@ body ul{
 @media screen and (max-width: 768px) {
     .browse-content .browse-topic p {
         margin-bottom: 16px;
+    }
+}
+
+@media screen and (max-width: 576px){
+
+    .browse .icon{
+        width: 30;
+        height: 30;
     }
 }
 
