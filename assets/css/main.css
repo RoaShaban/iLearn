@@ -880,14 +880,8 @@ footer ul, footer .btn{
     padding: 0;
 }
 
-footer .details .btn:hover{
-    border: transparent;
-    box-shadow: none;
-}
-
-footer .details .btn:active{
-    border: transparent;
-    box-shadow: none;
+.btn-check:checked .btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check) .btn:active {
+    border-color: transparent;
 }
 
 footer i{
