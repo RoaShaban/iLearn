@@ -3,21 +3,22 @@
     --contentFont: "Heebo", sans-serif;
     --mainColor: #007ECA;
     --imgBg: #f7f9fc;
+    --sectionBg: #f6f8fc;
 }
 
-*{
+* {
     /*outline: auto;*/
     box-sizing: border-box;
     margin: 0;
-}
-
-body{
-    margin: 0;
     padding: 0;
-    width: 100%;
 }
 
-body h1, h2,  h3, h4, h5, h6 {
+body h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--mainFont);
 }
 
@@ -25,15 +26,15 @@ body p {
     font-family: var(--contentFont);
 }
 
-body i{
+body i {
     color: var(--mainColor);
 }
 
-body ul{
+body ul {
     list-style-type: none;
 }
 
-.row{
+.row {
     margin: 0;
 }
 
@@ -96,7 +97,7 @@ body ul{
     color: var(--mainColor);
 }
 
-.navbar .btn:active{
+.navbar .btn:active {
     border: transparent;
     box-shadow: none;
 }
@@ -111,10 +112,283 @@ body ul{
 
 /* navbar ends */
 
+/* hero starts */
+
+.hero {
+    background-color: var(--sectionBg);
+}
+
+.hero-img-d img {
+    width: 100%;
+}
+
+.hero .rating {
+    font-family: var(--mainFont);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.hero .rating .star {
+    color: #FFC400;
+}
+
+.hero h1 {
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.hero p {
+    font-family: var(--contentFont);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.hero-btns .join-btn {
+    background-color: var(--mainColor);
+    padding: 15px 30px;
+    transition: 0.5s;
+    font-family: var(--mainFont);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.hero-btns .join-btn:hover {
+    background-color: #0E70AC;
+    border: transparent;
+    box-shadow: none;
+}
+
+.hero-btns .join-btn:active {
+    border: transparent;
+    box-shadow: none;
+    background-color: #0E70AC;
+}
+
+.view-btn .btn {
+    font-family: var(--mainFont);
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.view-btn .btn:hover {
+    color: var(--mainColor);
+}
+
+.view-btn i {
+    color: #000;
+    transition: 0.5s;
+}
+
+.view-btn .btn:hover i {
+    color: var(--mainColor);
+}
+
+.hero-img img {
+    width: 100%;
+}
+
+/* hero ends */
+
+/* hero responsive starts */
+
+@media screen and (max-width: 1200px) {
+
+    .hero h1 {
+        font-size: 65px;
+        font-weight: 600;
+    }
+
+    .hero p {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+}
+
+@media screen and (min-width: 991px) and (max-width: 992px) {
+
+    .hero h1 {
+        font-size: 50px;
+        font-weight: 600;
+    }
+
+    .hero p {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .hero-btns .join-btn {
+        padding: 15px 20px;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .view-btn .btn {
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 993px) {
+
+    .hero h1 {
+        font-size: 65px;
+        font-weight: 600;
+    }
+
+    .hero p {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .hero-btns .join-btn {
+        padding: 15px 30px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 991px) {
+
+    .hero h1 {
+        font-size: 50px;
+        font-weight: 600;
+    }
+
+    .hero p {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .hero-btns .join-btn {
+        padding: 15px 20px;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .view-btn .btn {
+        font-size: 12px;
+        font-weight: 500;
+    }
+    
+}
+
+@media screen and (min-width: 767px) and (max-width: 768px) {
+
+    .hero-btns .join-btn {
+        padding: 15px 30px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .view-btn .btn {
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 769px) {
+
+    .hero-btns .join-btn {
+        padding: 15px 20px;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .view-btn .btn {
+        font-size: 12px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .hero-btns .join-btn {
+        padding: 15px 30px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .view-btn .btn {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .hero .row{
+        gap: 4px;
+    }
+
+    .hero-img-d{
+        display: block;
+    }
+
+    .hero-img{
+        display: none;
+    }
+
+    .hero-content{
+        gap: 8px
+    }
+
+    .hero h1 {
+        font-size: 45px;
+        font-weight: 600;
+    }
+
+    .hero p {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .hero-btns .join-btn {
+        padding: 15px 20px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .view-btn .btn {
+        font-size: 15px;
+        font-weight: 500;
+    }
+    
+}
+
+@media screen and (max-width: 493px) {
+    
+    .hero h1 {
+        font-size: 35px;
+        font-weight: 600;
+    }
+
+    .hero p {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .hero-btns .join-btn {
+        padding: 15px 20px;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .view-btn .btn {
+        font-size: 12px;
+        font-weight: 500;
+    }
+}
+
+/* hero responsive ends */
+
 /* browse starts */
 
 .browse .browse-title {
-    margin-bottom: 70px;
+    margin-bottom: 0px;
 }
 
 .browse .browse-title h2 {
@@ -142,13 +416,13 @@ body ul{
     padding-right: 15px;
 }
 
-.browse .browse-more p{
+.browse .browse-more p {
     font-size: 16px;
     font-weight: 400;
     position: relative;
 }
 
-.browse .browse-more p::after{
+.browse .browse-more p::after {
     content: '';
     border-bottom: 1px dashed #c2c2c4;
     position: absolute;
@@ -193,21 +467,21 @@ body ul{
     }
 }
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 576px) {
 
-    .browse .icon{
+    .browse .icon {
         width: 30;
         height: 30;
     }
 }
 
-@media screen and (max-width: 551px){
+@media screen and (max-width: 551px) {
 
-    .browse .browse-title h2{
+    .browse .browse-title h2 {
         font-size: 30px;
     }
 
-    .browse .browse-title p{
+    .browse .browse-title p {
         font-size: 18px;
     }
 
@@ -215,22 +489,22 @@ body ul{
 
 @media screen and (max-width: 520px) {
 
-    .browse-more{
+    .browse-more {
         gap: 10px !important;
     }
 
-    .browse .browse-more p{
+    .browse .browse-more p {
         font-size: 13px;
     }
 
-    .browse .browse-more p::after{
+    .browse .browse-more p::after {
         content: '';
         border-bottom: 1px dashed #c2c2c4;
         position: absolute;
         bottom: -2px;
         left: -29px;
         width: 362px;
-}
+    }
 
 }
 
@@ -238,13 +512,13 @@ body ul{
 
 /* learn-something starts */
 
-.learn-img{
+.learn-img {
     position: relative;
     background-color: var(--imgBg);
     height: 499px;
 }
 
-.learn-img img{
+.learn-img img {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -253,27 +527,27 @@ body ul{
     height: 400px;
 }
 
-.learn-content{
+.learn-content {
     margin-left: 65px;
 }
 
-.learn-content h2{
+.learn-content h2 {
     font-size: 40px;
     font-weight: 600;
 }
 
-.learn-content p{
+.learn-content p {
     margin-top: 20px;
     margin-bottom: 40px;
     font-size: 16px;
     font-weight: 400;
 }
 
-.learn-content li{
+.learn-content li {
     margin-bottom: 10px;
 }
 
-.learn-content h3{
+.learn-content h3 {
     font-size: 20px;
     font-weight: 400;
 }
@@ -282,52 +556,84 @@ body ul{
 
 /* learn-something responsive starts */
 
-@media screen and (max-width: 1201px){
+@media screen and (max-width: 1201px) {
 
-
-    .learn-img img{
-        width:400px;
+    .learn-img img {
+        width: 400px;
         height: 270px;
     }
 
-    .learn-content{
+    .learn-content {
         margin-left: 50px;
     }
 
-    .learn-content h2{
+    .learn-content h2 {
         font-size: 35px;
     }
 
 }
 
-@media screen and (max-width: 993px){
+@media screen and (min-width: 991px) and (max-width: 992px) {
 
-    .learn-something .row{
-        flex-direction: column;
-    }
-
-    .learn-img img{
+    .learn-img img {
         width: 600px;
         height: 400px;
     }
 
-    .learn-content{
+    .learn-content {
         margin-left: 0;
         margin-top: 45px;
         text-align: center;
         align-items: center !important;
     }
 
-    .learn-content h2{
+}
+
+@media screen and (min-width: 992px) and (max-width: 993px) {
+
+    .learn-img img {
+        width: 400px;
+        height: 270px;
+    }
+
+    .learn-content {
+        margin-left: 50px;
+    }
+
+    .learn-content h2 {
         font-size: 35px;
     }
 
-    .learn-content p{
+}
+
+@media screen and (max-width: 991px) {
+
+    .learn-something .row {
+        flex-direction: column;
+    }
+
+    .learn-img img {
+        width: 600px;
+        height: 400px;
+    }
+
+    .learn-content {
+        margin-left: 0;
+        margin-top: 45px;
+        text-align: center;
+        align-items: center !important;
+    }
+
+    .learn-content h2 {
+        font-size: 35px;
+    }
+
+    .learn-content p {
         font-size: 18px;
         margin-bottom: 35px;
     }
 
-    .learn-content .learn-benifits{
+    .learn-content .learn-benifits {
         background-color: var(--imgBg);
         padding: 45px;
     }
@@ -335,36 +641,36 @@ body ul{
 
 @media screen and (max-width: 768px) {
 
-    .learn-img{
+    .learn-img {
         height: 400px;
     }
-    
-    .learn-img img{
+
+    .learn-img img {
         width: 400px;
         height: 270px;
     }
 
-    .learn-content h2{
+    .learn-content h2 {
         font-size: 35px;
     }
 
 }
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 576px) {
 
-    .learn-content h2{
+    .learn-content h2 {
         font-size: 30px;
     }
 
-    .learn-content p{
+    .learn-content p {
         font-size: 19px;
     }
 
 }
 
-@media screen and (max-width: 551px){
+@media screen and (max-width: 551px) {
 
-    .learn-content h3{
+    .learn-content h3 {
         font-size: 18px;
     }
 
@@ -372,28 +678,28 @@ body ul{
 
 @media screen and (max-width: 475px) {
 
-    .learn-img{
+    .learn-img {
         height: 300px;
     }
-    
-    .learn-img img{
+
+    .learn-img img {
         width: 330px;
         height: 200px;
     }
 
-    .learn-benifits ul li{
+    .learn-benifits ul li {
         text-align: left;
     }
 
 }
 
-@media screen and (max-width: 443px){
+@media screen and (max-width: 443px) {
 
-    .learn-content h2{
+    .learn-content h2 {
         font-size: 30px;
     }
 
-    .learn-content p{
+    .learn-content p {
         font-size: 18px;
     }
 
@@ -407,67 +713,67 @@ body ul{
     background-color: var(--imgBg);
 }
 
-.featured-courses-title h2{
+.featured-courses-title h2 {
     font-size: 40px;
     font-weight: 600;
     margin-top: 60px;
     margin-bottom: 20px;
 }
 
-.featured-courses-title p{
+.featured-courses-title p {
     font-size: 24px;
     font-weight: 400;
     margin-bottom: 30px;
     padding: 0 130px;
 }
 
-.featured-courses .btn{
+.featured-courses .btn {
     padding: 0;
 }
 
-.featured-courses .btn:hover{
+.featured-courses .btn:hover {
     border: transparent;
     box-shadow: none;
 }
 
-.featured-courses .btn:active{
+.featured-courses .btn:active {
     border: transparent;
     box-shadow: none;
 }
 
-.featured-courses-title .btn{
+.featured-courses-title .btn {
     margin-bottom: 50px;
 }
 
-.featured-courses-title .btn span{
+.featured-courses-title .btn span {
     font-size: 16px;
     font-weight: 500;
     transition: 0.5s;
 }
 
-.featured-courses-title .btn:hover span{
+.featured-courses-title .btn:hover span {
     color: #000;
 }
 
-.featured-courses-title .btn i{
+.featured-courses-title .btn i {
     transition: 0.5s;
 }
 
-.featured-courses-title .btn:hover i{
+.featured-courses-title .btn:hover i {
     color: #000;
 }
 
-.featured-courses .card{
+.featured-courses .card {
     margin-bottom: 60px;
 }
 
-.featured-courses h3{
+.featured-courses h3 {
     font-size: 22px;
     font-weight: 600;
     margin-bottom: 20px;
 }
 
-.featured-courses span{
+.featured-courses span {
     font-size: 14px;
     font-weight: 600;
     color: var(--mainColor);
@@ -479,147 +785,147 @@ body ul{
 
 /* featured-courses responsive starts */
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1200px) {
 
-    .featured-courses-title h2{
+    .featured-courses-title h2 {
         font-size: 35px;
         margin-bottom: 30px;
         margin-top: 50px;
     }
 
-    .featured-courses-title p{
+    .featured-courses-title p {
         font-size: 22px;
         margin-bottom: 35px;
         padding: 0 100px;
     }
 
-    .featured-courses .card{
+    .featured-courses .card {
         margin-bottom: 40px;
     }
 
-    .featured-courses h3{
+    .featured-courses h3 {
         font-size: 18px;
     }
 
-    .featured-courses span{
+    .featured-courses span {
         font-size: 12px;
         margin-left: 5px;
     }
 
-    .featured-courses i{
+    .featured-courses i {
         font-size: 12px;
     }
 
 }
 
-@media screen and (max-width: 991px){
+@media screen and (max-width: 991px) {
 
-    .featured-courses-title p{
+    .featured-courses-title p {
         font-size: 21px;
         padding: 0;
     }
 
-    .featured-courses .container .row{
+    .featured-courses .container .row {
         row-gap: 35px;
     }
 
-    .featured-courses .card{
+    .featured-courses .card {
         margin: 0;
     }
 
-    .featured-courses .last-card{
+    .featured-courses .last-card {
         margin-bottom: 40px;
     }
 
-    .featured-courses .course-info{
+    .featured-courses .course-info {
         margin-top: 10px;
         margin-bottom: 10px;
     }
-    
-    .featured-courses h3{
+
+    .featured-courses h3 {
         font-size: 24px;
     }
 
-    .featured-courses span{
+    .featured-courses span {
         font-size: 16px;
         margin-left: 10px;
     }
 
-    .featured-courses i{
+    .featured-courses i {
         font-size: 16px;
     }
 
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
 
-    .featured-courses-title p{
+    .featured-courses-title p {
         font-size: 19px;
     }
 
-    .featured-courses .last-card{
+    .featured-courses .last-card {
         margin-bottom: 25px;
     }
 
-    .featured-courses .course-info{
+    .featured-courses .course-info {
         margin-top: 7px;
         margin-bottom: 7px;
     }
 
-    .featured-courses span{
+    .featured-courses span {
         font-size: 14px;
         margin-left: 10px;
     }
 
-    .featured-courses i{
+    .featured-courses i {
         font-size: 14px;
     }
 
 }
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 576px) {
 
-    .featured-courses .last-card{
+    .featured-courses .last-card {
         margin-bottom: 15px;
     }
 
-    .featured-courses .course-info{
+    .featured-courses .course-info {
         margin-top: 7px;
         margin-bottom: 7px;
     }
 
-    .featured-courses h3{
+    .featured-courses h3 {
         font-size: 22px;
     }
 
-    .featured-courses span{
+    .featured-courses span {
         font-size: 14px;
         margin-left: 10px;
     }
 
-    .featured-courses i{
+    .featured-courses i {
         font-size: 14px;
     }
 
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 450px) {
 
-    .featured-courses .last-card{
+    .featured-courses .last-card {
         margin-bottom: 10px;
     }
 
-    .featured-courses h3{
+    .featured-courses h3 {
         font-size: 17px;
         font-weight: 550;
     }
 
-    .featured-courses span{
+    .featured-courses span {
         font-size: 12px;
         margin-left: 5px;
     }
 
-    .featured-courses i{
+    .featured-courses i {
         font-size: 12px;
     }
 
@@ -629,32 +935,33 @@ body ul{
 
 /* improve section starts */
 
-.improve h2{
+.improve h2 {
     font-size: 40px;
     font-weight: 600;
 }
 
-.improve h3 button{
+.improve h3 button {
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 600;
 }
 
-.improve p{
+.improve p {
     font-size: 16px;
     font-weight: 400;
 }
 
-.improve .accordion{
+.improve .accordion {
     --bs-accordion-border-color: #fff;
 }
 
-.improve .accordion-body{
+.improve .accordion-body {
     font-size: 16px;
     font-weight: 400;
 }
 
-.accordion-body, .accordion-button{
+.accordion-body,
+.accordion-button {
     padding-left: 0;
 }
 
@@ -664,17 +971,17 @@ body ul{
     color: #000;
 }
 
-.accordion-button:focus{
+.accordion-button:focus {
     box-shadow: none;
 }
 
-.improve .improve-img{
+.improve .improve-img {
     position: relative;
     background-color: var(--imgBg);
     height: 450px;
 }
 
-.improve .improve-img img{
+.improve .improve-img img {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -685,65 +992,65 @@ body ul{
 
 /* improve section reaponsive starts */
 
-@media screen and (max-width: 1200px){
-    .improve h2{
+@media screen and (max-width: 1200px) {
+    .improve h2 {
         font-size: 35px;
     }
 
-    .improve .improve-img img{
-        width:400px;
+    .improve .improve-img img {
+        width: 400px;
         height: 270px;
     }
 }
 
-@media screen and (max-width: 993px){
+@media screen and (max-width: 993px) {
 
-    .improve .improve-img img{
-        width: 600px;
-        height: 400px;
+    .improve .improve-img img {
+        width: 500px;
+        height: 350px;
     }
 
 }
 
 @media screen and (max-width: 768px) {
 
-    .improve .improve-img{
+    .improve .improve-img {
         height: 400px;
     }
-    
-    .improve .improve-img img{
+
+    .improve .improve-img img {
         width: 400px;
         height: 270px;
     }
 
 }
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 576px) {
 
-    .improve .row{
+    .improve .row {
         row-gap: 20px;
     }
 
-    .improve p{
+    .improve p {
         font-size: 14px;
     }
 
-    .improve .accordion-body{
+    .improve .accordion-body {
         font-size: 15px;
     }
 
-    .improve .improve-img{
+    .improve .improve-img {
         height: 430px;
     }
 }
 
 @media screen and (max-width: 475px) {
 
-    .improve .improve-img{
+    .improve .improve-img {
         height: 300px;
     }
-    
-    .improve .improve-img img{
+
+    .improve .improve-img img {
         width: 330px;
         height: 200px;
     }
@@ -754,22 +1061,22 @@ body ul{
 
 /* learn-then-earn starts */
 
-.learn-then-earn .row{
+.learn-then-earn .row {
     background-color: var(--imgBg);
     padding: 30px;
 }
 
-.learn-then-earn-title h2{
+.learn-then-earn-title h2 {
     font-size: 40px;
     font-weight: 600;
 }
 
-.learn-then-earn-title p{
+.learn-then-earn-title p {
     font-size: 16px;
     font-weight: 400;
 }
 
-.learn-then-earn .join-btn{
+.learn-then-earn .join-btn {
     background-color: var(--mainColor);
     padding: 20px 40px;
     transition: 0.5s;
@@ -778,13 +1085,13 @@ body ul{
     font-weight: 500;
 }
 
-.learn-then-earn .join-btn:hover{
+.learn-then-earn .join-btn:hover {
     background-color: #0E70AC;
     border: transparent;
     box-shadow: none;
 }
 
-.learn-then-earn .join-btn:active{
+.learn-then-earn .join-btn:active {
     border: transparent;
     box-shadow: none;
     background-color: #0E70AC;
@@ -794,36 +1101,36 @@ body ul{
 
 /* learn-then-earn responsive starts */
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1200px) {
 
-    .learn-then-earn .join-btn{
+    .learn-then-earn .join-btn {
         background-color: var(--mainColor);
         padding: 20px 30px;
     }
 
-    .learn-then-earn-title h2{
+    .learn-then-earn-title h2 {
         font-size: 30px;
     }
 
 }
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 992px) {
 
-    .learn-then-earn .row{
+    .learn-then-earn .row {
         flex-direction: column;
         justify-content: center;
         text-align: center;
     }
 
-    .learn-then-earn .learn-then-earn-title h2{
+    .learn-then-earn .learn-then-earn-title h2 {
         margin-bottom: 14px !important;
     }
 
-    .learn-then-earn .learn-then-earn-title p{
+    .learn-then-earn .learn-then-earn-title p {
         font-size: 19px;
     }
 
-    .learn-then-earn .join-btn{
+    .learn-then-earn .join-btn {
         padding: 17px 30px;
         text-align: center;
         margin-top: 10px;
@@ -832,17 +1139,17 @@ body ul{
 
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
 
-    .learn-then-earn .learn-then-earn-title h2{
+    .learn-then-earn .learn-then-earn-title h2 {
         font-size: 30px;
     }
 
-    .learn-then-earn .learn-then-earn-title p{
+    .learn-then-earn .learn-then-earn-title p {
         font-size: 18px;
     }
 
-    .learn-then-earn .join-btn{
+    .learn-then-earn .join-btn {
         padding: 15px 27px;
         margin-top: 7px;
         font-size: 14px;
@@ -850,17 +1157,17 @@ body ul{
 
 }
 
-@media screen and (max-width: 514px){
+@media screen and (max-width: 514px) {
 
-    .learn-then-earn .learn-then-earn-title h2{
+    .learn-then-earn .learn-then-earn-title h2 {
         font-size: 25px;
     }
 
-    .learn-then-earn .learn-then-earn-title p{
+    .learn-then-earn .learn-then-earn-title p {
         font-size: 16px;
     }
 
-    .learn-then-earn .join-btn{
+    .learn-then-earn .join-btn {
         padding: 12px 20px;
         margin-top: 7px;
         font-size: 12px;
@@ -872,37 +1179,46 @@ body ul{
 
 /* footer starts */
 
-footer h2{
+footer h2 {
     color: var(--mainColor);
     font-size: 14px;
     font-weight: 600;
     margin-bottom: 30px;
 }
 
-footer .text{
+footer .text {
     font-size: 16px;
     font-weight: 400;
     font-family: var(--contentFont);
 }
 
-footer .text a{
+footer .text a {
     margin-bottom: 5px;
 }
 
-footer ul, footer .btn{
+footer ul,
+footer .btn {
     margin: 0;
     padding: 0;
 }
 
-.btn-check:checked .btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check) .btn:active {
+footer .details a:hover {
+    color: var(--mainColor);
+}
+
+.btn-check:checked .btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check) .btn:active {
     border-color: transparent;
 }
 
-footer i{
+footer i {
     font-size: 18px;
 }
 
-footer .contact i{
+footer .contact i {
     font-size: 16px;
 }
 
@@ -910,69 +1226,69 @@ footer .contact i{
 
 /* footer responsive starts */
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 992px) {
 
-    footer .footer-content{
+    footer .footer-content {
         text-align: left;
         flex-direction: column;
         justify-content: center;
-        gap: 60px;
+        gap: 0px;
     }
 
-    footer .footer-content .logo{
+    footer .footer-content .logo {
         flex-direction: row !important;
         justify-content: space-between;
         align-items: center;
     }
 
-    footer h2{
+    footer h2 {
         margin-bottom: 25px;
     }
 
-    footer .footer-content address{
+    footer .footer-content address {
         font-size: 14px;
     }
 
-    footer .office .btn{
+    footer .office .btn {
         text-align: left;
         font-size: 14px;
     }
 
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
 
-    footer .row{
+    footer .row {
         justify-content: space-between;
     }
 
-    footer .office .btn{
+    footer .office .btn {
         font-size: 14px;
     }
 
 }
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 576px) {
 
-    footer .footer-content{
+    footer .footer-content {
         gap: 45px;
     }
 
-    footer .footer-content .logo{
+    footer .footer-content .logo {
         flex-direction: column !important;
         justify-content: space-between;
         align-items: flex-start;
     }
 
-    footer .row{
+    footer .row {
         row-gap: 30px;
     }
 
-    .details .col-xs{
+    .details .col-xs {
         width: 50%;
     }
 
-    footer h2{
+    footer h2 {
         margin-bottom: 25px;
     }
 
