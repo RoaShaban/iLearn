@@ -1,0 +1,76 @@
+/* learn-something enjoy starts */
+
+.learn-something .enjoy h2 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.learn-something .enjoy p {
+    font-size: 24px;
+    font-weight: 400;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-bottom: 50px;
+}
+
+/* learn-something enjoy ends */
+
+/* learn-something enjoy responsive starts */
+
+@media screen and (max-width: 1200px) {
+
+    .learn-something .enjoy h2 {
+        font-size: 45px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .learn-something .enjoy p {
+        font-size: 22px;
+        font-weight: 400;
+        padding-left: 150px;
+        padding-right: 150px;
+        margin-bottom: 50px;
+    }
+
+}
+
+
+@media screen and (max-width: 992px) {
+
+    .learn-something .enjoy h2 {
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 25px;
+    }
+
+    .learn-something .enjoy p {
+        font-size: 20px;
+        font-weight: 400;
+        padding-left: 70px;
+        padding-right: 70px;
+        margin-bottom: 40px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .learn-something .enjoy h2 {
+        font-size: 35px;
+        font-weight: 600;
+        margin-bottom: 25px;
+    }
+
+    .learn-something .enjoy p {
+        font-size: 19px;
+        font-weight: 400;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-bottom: 30px;
+    }
+
+}
+
+/* learn-something enjoy responsive ends */
