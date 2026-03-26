@@ -200,6 +200,209 @@ body ul {
 
 /* cources responsive ends */
 
+/* featured-courses starts */
+
+.explore-courses{
+    background-color: var(--imgBg);
+}
+
+.explore-courses-title h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.explore-courses-title p {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    padding: 0 130px;
+}
+
+.explore-courses .btn {
+    padding: 0;
+}
+
+.explore-courses .btn:hover {
+    border: transparent;
+    box-shadow: none;
+}
+
+.explore-courses .btn:active {
+    border: transparent;
+    box-shadow: none;
+}
+
+.explore-courses .card {
+    margin-bottom: 60px;
+}
+
+.explore-courses h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.explore-courses span {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--mainColor);
+    font-family: var(--mainFont);
+    margin-left: 10px;
+}
+
+/* explore-courses ends */
+
+/* explore-courses responsive starts */
+
+@media screen and (max-width: 1200px) {
+
+    .explore-courses-title h2 {
+        font-size: 35px;
+        margin-bottom: 30px;
+        margin-top: 50px;
+    }
+
+    .explore-courses-title p {
+        font-size: 22px;
+        margin-bottom: 35px;
+        padding: 0 100px;
+    }
+
+    .explore-courses .card {
+        margin-bottom: 40px;
+    }
+
+    .explore-courses h3 {
+        font-size: 18px;
+    }
+
+    .explore-courses span {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+
+    .explore-courses i {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+
+    .explore-courses-title p {
+        font-size: 21px;
+        padding: 0;
+    }
+
+    .explore-courses .container .row {
+        row-gap: 35px;
+    }
+
+    .explore-courses .card {
+        margin: 0;
+    }
+
+    .explore-courses .last-card {
+        margin-bottom: 40px;
+    }
+
+    .explore-courses .course-info {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .explore-courses h3 {
+        font-size: 24px;
+    }
+
+    .explore-courses span {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+
+    .explore-courses i {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .explore-courses-title p {
+        font-size: 19px;
+    }
+
+    .explore-courses .last-card {
+        margin-bottom: 25px;
+    }
+
+    .explore-courses .course-info {
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+
+    .explore-courses span {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    .explore-courses i {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .explore-courses .last-card {
+        margin-bottom: 15px;
+    }
+
+    .explore-courses .course-info {
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+
+    .explore-courses h3 {
+        font-size: 22px;
+    }
+
+    .explore-courses span {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    .explore-courses i {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+
+    .explore-courses .last-card {
+        margin-bottom: 10px;
+    }
+
+    .explore-courses h3 {
+        font-size: 17px;
+        font-weight: 550;
+    }
+
+    .explore-courses span {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+
+    .explore-courses i {
+        font-size: 12px;
+    }
+
+}
+
+/* featured-courses responsive ends */
 
 /* footer starts */
 
