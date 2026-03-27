@@ -1,3 +1,149 @@
+/* single-course starts */
+
+.single-course {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: var(--sectionBg);
+    position: relative;
+    z-index: -2;
+}
+
+.bg-img {
+    width: 30%;
+    position: absolute;
+    bottom: 0px;
+    left: -100px;
+    z-index: -1;
+}
+
+.single-course h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.single-course p {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.single-course h2 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.single-course .join-btn {
+    background-color: var(--mainColor);
+    padding: 15px 40px;
+    transition: 0.5s;
+    font-family: var(--mainFont);
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.single-course .join-btn:hover {
+    background-color: #0E70AC;
+    border: transparent;
+    box-shadow: none;
+}
+
+.single-course .join-btn:active {
+    border: transparent;
+    box-shadow: none;
+    background-color: #0E70AC;
+}
+
+.single-course .course-video {
+    position: relative;
+}
+
+.course-video img {
+    width: 80%;
+}
+
+.course-video .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.course-video .icon i {
+    font-size: 20px;
+}
+
+/* single-course ends */
+
+/* single-course responsive starts */
+
+@media screen and (max-width: 1200px) {
+
+    .single-course h1 {
+        font-size: 40px;
+    }
+
+    .single-course p {
+        font-size: 22px;
+    }
+
+    .single-course h2 {
+        font-size: 18px;
+    }
+
+    .single-course .join-btn {
+        padding: 15px 35px;
+    }
+
+    .course-video img {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .single-course {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .bg-img {
+        width: 45%;
+    }
+
+    .single-course h1 {
+        font-size: 30px;
+    }
+
+    .single-course p {
+        font-size: 16px;
+    }
+
+    .single-course .join-btn {
+        padding: 15px 35px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .bg-img {
+        width: 55%;
+    }
+
+}
+
+
+/* single-course responsive starts */
+
+
 /* learn-from-beginning starts */
 
 .learn-from-beginning h2 {
@@ -79,7 +225,7 @@
 
 /* related-courses starts */
 
-.related-courses{
+.related-courses {
     background-color: var(--imgBg);
 }
 
