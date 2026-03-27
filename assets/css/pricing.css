@@ -1,3 +1,219 @@
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* simple-pricing starts */
+
+.simple-pricing .pricing-title h2 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    font-family: var(--mainFont);
+}
+
+.simple-pricing .pricing-title p {
+    font-size: 24px;
+    font-weight: 400;
+    padding-left: 200px;
+    padding-right: 200px;
+    font-family: var(--contentFont);
+    margin-bottom: 50px;
+}
+
+.simple-pricing .card {
+    width: 95%;
+    transition-duration: 0.5s;
+}
+
+.simple-pricing .card:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.simple-pricing .card:hover .plan-features .plan-feature .icon {
+    background-color: #fff;
+}
+
+.simple-pricing .card:hover .plan-features .plan-feature .icon i {
+    color: #000;
+}
+
+.simple-pricing .card:hover .card-footer {
+    background-color: var(--mainColor);
+}
+
+.simple-pricing .card h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-family: var(--contentFont);
+}
+
+.simple-pricing .card p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.simple-pricing .choose-btn {
+    background-color: var(--mainColor);
+    padding: 13px 30px;
+    transition: 0.5s;
+    font-family: var(--mainFont);
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.simple-pricing .choose-btn:hover {
+    background-color: #0E70AC;
+    border: transparent;
+    box-shadow: none;
+}
+
+.simple-pricing .choose-btn:active {
+    border: transparent;
+    box-shadow: none;
+    background-color: #0E70AC;
+}
+
+.plan-features {
+    margin-top: 25px;
+    margin-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.plan-features .plan-feature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.plan-features .plan-feature h4 {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.plan-features .plan-feature .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.5s;
+    background-color: var(--mainColor);
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+}
+
+.plan-features .plan-feature .icon i {
+    color: #fff;
+    font-size: 8px;
+    transition: color 0.5s;
+}
+
+.simple-pricing .card .card-footer {
+    color: #fff;
+    background-color: #000;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: var(--mainFont);
+    transition-duration: 0.5s;
+}
+
+.simple-pricing .card .card-footer sup {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--contentFont);
+}
+
+/* simple-pricing ends */
+
+/* simple-pricing responsive starts */
+
+@media screen and (max-width: 1200px) {
+
+    .simple-pricing .pricing-title h2 {
+        font-size: 45px;
+        font-weight: 600;
+        margin-bottom: 25px;
+    }
+
+    .simple-pricing .pricing-title p {
+        font-size: 22px;
+        font-weight: 400;
+        padding-left: 150px;
+        padding-right: 150px;
+        margin-bottom: 50px;
+    }
+
+    .simple-pricing .card {
+        width: 100%;
+    }
+
+    .simple-pricing .choose-btn {
+        padding: 12px 27px;
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .simple-pricing .pricing-title h2 {
+        font-size: 42px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+
+    .simple-pricing .pricing-title p {
+        font-size: 20px;
+        font-weight: 400;
+        padding-left: 70px;
+        padding-right: 70px;
+        margin-bottom: 15px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .simple-pricing .pricing-title h2 {
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+
+    .simple-pricing .pricing-title p {
+        font-size: 19px;
+        font-weight: 400;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .simple-pricing .row{
+        
+    }
+
+    
+
+}
+
+
+/* simple-pricing responsive ends */
+
 /* questions section starts */
 
 .questions h2 {
