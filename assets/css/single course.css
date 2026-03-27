@@ -1,3 +1,82 @@
+/* learn-from-beginning starts */
+
+.learn-from-beginning h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.learn-from-beginning p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.learn-from-beginning img {
+    margin-bottom: 13px;
+}
+
+.learn-from-beginning .join-btn {
+    background-color: var(--mainColor);
+    padding: 20px 40px;
+    transition: 0.5s;
+    font-family: var(--mainFont);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.learn-from-beginning .join-btn:hover {
+    background-color: #0E70AC;
+    border: transparent;
+    box-shadow: none;
+}
+
+.learn-from-beginning .join-btn:active {
+    border: transparent;
+    box-shadow: none;
+    background-color: #0E70AC;
+}
+
+/* learn-from-beginning ends */
+
+
+/* learn-from-beginning responsive starts */
+
+@media screen and (max-width: 1200px) {
+
+    .learn-from-beginning h2 {
+        font-size: 30px;
+    }
+
+    .learn-from-beginning p {
+        font-size: 15px;
+    }
+
+    .learn-from-beginning .join-btn {
+        padding: 20px 35px;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .learn-from-beginning h2 {
+        font-size: 30px;
+    }
+
+    .learn-from-beginning p {
+        font-size: 15px;
+    }
+
+    .learn-from-beginning .join-btn {
+        padding: 20px 35px;
+    }
+
+
+}
+
+/* learn-from-beginning responsive ends */
+
+
 /* related-courses starts */
 
 .related-courses{
@@ -7,7 +86,7 @@
 .related-courses-title h2 {
     font-size: 32px;
     font-weight: 600;
-    margin-top: 60px;
+    margin-top: 50px;
     margin-bottom: 30px;
 }
 
