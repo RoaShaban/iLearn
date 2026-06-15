@@ -88,10 +88,8 @@ ul {
 }
 
 .plan-features .plan-feature {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 10px;
+    width: 155px;
 }
 
 .plan-features .plan-feature h4 {
@@ -200,17 +198,6 @@ ul {
         margin-bottom: 15px;
     }
 }
-
-@media screen and (max-width: 576px) {
-
-    .simple-pricing .row{
-        
-    }
-
-    
-
-}
-
 
 /* simple-pricing responsive ends */
 
